@@ -6,7 +6,6 @@ from main import app
 class MyTest(TestCase):
 
     def create_app(self):
-        # Pass in test configuration
         app.config['TESTING'] = True
         return app
 

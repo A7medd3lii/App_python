@@ -4,12 +4,10 @@ WORKDIR /app
 
 COPY requirements.txt .
 
-RUN pip install --no-cache-dir -r requirements.tx
+RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-# Expose the port that the app will run on
 EXPOSE 5050
 
-# Define the command to run the application
-CMD ["python", "app.py"]
+CMD ["python", "main.py"]
